@@ -56,11 +56,11 @@ pipeline {
                         '''
                     }
 
-                    post {
-                        always {
-                            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'test-results', reportFiles: 'index.html', reportName: 'E2E Tests', reportTitles: ''])
-                        }
-                    }
+                    // post {
+                    //     always {
+                    //         publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'test-results', reportFiles: 'index.html', reportName: 'E2E Tests', reportTitles: ''])
+                    //     }
+                    // }
                 }
             }
         }
